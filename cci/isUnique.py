@@ -1,3 +1,4 @@
+# check if a string has all unique characters 
 def isUnique(s: str):
 	table = {}
 	for ch in s: 
