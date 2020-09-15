@@ -2,6 +2,7 @@
 # check if a string is one edit or zero edit away from the other
 
 def oneEditAway(s1: str, s2: str):
+	# time complexity: O(max{n, m}), space complexity: O(1) / O(128)
 	if (len(s1) - len(s2) > 1 or len(s2) - len(s1) > 1):
 		return False
 	
