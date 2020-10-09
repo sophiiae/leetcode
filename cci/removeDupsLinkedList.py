@@ -1,22 +1,5 @@
 # write method to remove duplicates from unsorted linked list
-
-class ListNode:
-	def __init__(self, val=0, next=None):
-		self.val = val
-		self.next = next
-
-class LinkedList:
-	def __init__(self, head=None):
-		self.head = head
-
-	def insert(self, data):
-		node = ListNode(data, self.head)
-		self.head = node
-
-	def insertByArray(self, arr: []):
-		for val in arr:
-			self.insert(val)
-
+from linkedList import ListNode, LinkedList
 def removeDups(head: ListNode):
 	table = {}
 	pre, node = head, head
