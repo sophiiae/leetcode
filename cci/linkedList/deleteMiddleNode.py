@@ -1,6 +1,7 @@
 from linkedList import ListNode, LinkedList
 
 # write a method delete any node but first and last node. nothing returned. 
+# only given access to target node
 def deleteMiddleNode(node: ListNode):
 	node.val = node.next.val
 	node.next = node.next.next
