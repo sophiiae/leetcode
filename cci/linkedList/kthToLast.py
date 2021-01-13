@@ -24,4 +24,3 @@ list1.insertByArray([3, 4, 5, 6, 1, 7, 3, 2, 6, 9, 1, 1])
 
 print(kthToLast(list1.head, 3).val) #9
 print(kthToLast(list1.head, 5).val) #2
-
