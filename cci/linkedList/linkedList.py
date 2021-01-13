@@ -3,6 +3,14 @@ class ListNode:
 		self.val = val
 		self.next = next
 
+	def printAll(self):
+		arr = []
+		node = self
+		while node: 
+			arr.append(node.val)
+			node = node.next
+		return arr
+
 class LinkedList:
 	def __init__(self, head=None):
 		self.head = head

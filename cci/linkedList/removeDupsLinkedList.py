@@ -13,17 +13,10 @@ def removeDups(head: ListNode):
 			node = node.next
 	return head
 
-def linkedListToArray(head: ListNode):
-	arr = []
-	while(head):
-		arr.append(head.val)
-		head = head.next
-	return arr
-
 list1 = LinkedList()
 list1.insertByArray([3, 4, 5, 6, 1, 7, 3, 2, 6, 9, 1, 1])
 
-print(linkedListToArray(removeDups(list1.head)))
+print(removeDups(list1.head).printAll())
 
 
 
